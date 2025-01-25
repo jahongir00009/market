@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font (Roboto) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Toastify CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="stylesheet" href="./src/css/responsive.css" />
+    <title>Vivat</title>
+  </head>
+  <body>
+    <!-- WARNING -->
+    <div class="warning">
+      <p>
+        К сожалению, наш сайт не работает на вашем устройстве, используйте
+        устройство с большим экраном.
+      </p>
+    </div>
+
+    <!-- HEADER SECTION -->
+    <header class="header">
+      <div class="quick-links-wrapper">
+        <div class="container">
+          <ul class="quick-links">
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Оплата</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Наш салон</a></li>
+            <li><a href="tel:+84994086227">8 (499) 408-62-27</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-wrapper">
+        <div class="container">
+          <div class="menu">
+            <a href="/" class="logo">
+              <img src="./public/images/vivat.png" alt="vivat-logo" />
+            </a>
+            <div class="search-input">
+              <form action="">
+                <input
+                  type="text"
+                  name="search"
+                  placeholder="Поиск товаров..."
+                />
+              </form>
+              <img src="./public/icons/search.svg" alt="search-icon" />
+            </div>
+            <a href="#" class="buy-btn">
+              <span>Скидки</span>
+              Успей купить
+            </a>
+            <a href="#" class="notification-btn">
+              <img
+                src="./public/icons/notification.svg"
+                alt="notification-icon"
+              />
+            </a>
+            <div class="popover-wrapper">
+              <div class="popover"></div>
+              <a href="#" class="bookmark-btn">
+                <div class="bookmark-btn-icon">
+                  <img src="./public/icons/heart.svg" alt="bookmark-icon" />
+                  <span class="bookmarks-badge">0</span>
+                </div>
+                <span class="bookmark-text">Избранное</span>
+              </a>
+            </div>
+            <a href="#" class="basket-btn">
+              <div class="basket-btn-icon">
+                <img
+                  src="./public/icons/bi_basket-fill.svg"
+                  alt="basket-icon"
+                />
+              </div>
+              <span>Корзина</span>
+            </a>
+            <a class="open-menu-btn">
+              <img src="./public/icons/open-menu.svg" alt="open" />
+            </a>
+          </div>
+          <div class="search-input-bt">
+            <form action="">
+              <input type="text" name="search" placeholder="Поиск товаров..." />
+            </form>
+            <img src="./public/icons/search.svg" alt="search-icon" />
+          </div>
+        </div>
+      </div>
+      <div class="navbar-wrapper">
+        <div class="container">
+          <nav class="navbar">
+            <ul>
+              <li>
+                <a class="flex"
+                  >Кухни
+                  <svg
+                    class="arrow-down"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="5"
+                    height="5"
+                    viewBox="0 0 5 5"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_1_4690)">
+                      <path
+                        id="path1"
+                        d="M4.37455 1.04171L0.624555 1.04171C0.586588 1.04183 0.549372 1.0523 0.516914 1.07199C0.484455 1.09169 0.457984 1.11987 0.440347 1.15349C0.422711 1.18711 0.414579 1.22491 0.416825 1.26281C0.419071 1.30071 0.431612 1.33728 0.453097 1.36858L2.3281 4.07691C2.4058 4.18921 2.59289 4.18921 2.6708 4.07691L4.5458 1.36858C4.56751 1.33734 4.58024 1.30075 4.5826 1.26279C4.58497 1.22483 4.57689 1.18694 4.55924 1.15325C4.54159 1.11955 4.51504 1.09134 4.48248 1.07168C4.44992 1.05201 4.41259 1.04165 4.37455 1.04171Z"
+                        fill="black"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_4690">
+                        <rect
+                          width="5"
+                          height="5"
+                          fill="white"
+                          transform="translate(5 5) rotate(180)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+                <div class="submenu">
+                  <div>
+                    <div>
+                      <h1>Кухни</h1>
+                      <a href="#">Модульные кухни</a>
+                      <a href="#">Готовые решения</a>
+                    </div>
+                    <div>
+                      <h1>Сантехника для кухни</h1>
+                      <a href="#"
+                        >Мойки
+                        <span class="bg-green">Новинки</span>
+                      </a>
+                      <a href="#">Смесители</a>
+                    </div>
+                  </div>
+                  <div>
+                    <h1>Бытовая техника для кухни</h1>
+                    <a href="#">Духовые шкафы</a>
+                    <a href="#">Варочные панели</a>
+                    <a href="#"
+                      >Вытяжки
+                      <span class="bg-red">Скидки</span>
+                    </a>
+                    <a href="#">Микроволновые печи</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a class="flex"
+                  >Шкафы
+                  <svg
+                    class="arrow-down"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="5"
+                    height="5"
+                    viewBox="0 0 5 5"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_1_4690)">
+                      <path
+                        id="path1"
+                        d="M4.37455 1.04171L0.624555 1.04171C0.586588 1.04183 0.549372 1.0523 0.516914 1.07199C0.484455 1.09169 0.457984 1.11987 0.440347 1.15349C0.422711 1.18711 0.414579 1.22491 0.416825 1.26281C0.419071 1.30071 0.431612 1.33728 0.453097 1.36858L2.3281 4.07691C2.4058 4.18921 2.59289 4.18921 2.6708 4.07691L4.5458 1.36858C4.56751 1.33734 4.58024 1.30075 4.5826 1.26279C4.58497 1.22483 4.57689 1.18694 4.55924 1.15325C4.54159 1.11955 4.51504 1.09134 4.48248 1.07168C4.44992 1.05201 4.41259 1.04165 4.37455 1.04171Z"
+                        fill="black"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_4690">
+                        <rect
+                          width="5"
+                          height="5"
+                          fill="white"
+                          transform="translate(5 5) rotate(180)"
+                        />
+                      </clipPath>
+                    </defs></svg
+                ></a>
+                <div class="submenu">
+                  <div>
+                    <div>
+                      <h1>Шкафы</h1>
+                      <a href="#">Модульные шкафы</a>
+                      <a href="#"
+                        >Готовые решения
+                        <span class="bg-green">Новинки</span></a
+                      >
+                    </div>
+                    <div>
+                      <h1>Сантехника для шкафы</h1>
+                      <a href="#">Мойки </a>
+                      <a href="#">Смесители</a>
+                    </div>
+                  </div>
+                  <div>
+                    <h1>Бытовая техника для шкафы</h1>
+                    <a href="#"
+                      >Духовые шкафы <span class="bg-red">Скидки</span></a
+                    >
+                    <a href="#">Варочные панели</a>
+                    <a href="#">Вытяжки </a>
+                    <a href="#">Микроволновые печи</a>
+                  </div>
+                </div>
+              </li>
+              <li><a href="#">Прихожие</a></li>
+              <li><a href="#">Гостиная</a></li>
+              <li><a href="#">Мебель малых форм</a></li>
+              <li><a href="#">Комоды и тумбы</a></li>
+              <li><a href="#">Столы</a></li>
+              <li><a href="#">Матрасы</a></li>
+              <li><a href="#">Бытовая Техника</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="responsive-menu">
+        <div class="menu-top flex">
+          <a href="/" class="menu-logo">
+            <img src="./public/images/vivat.png" alt="logo" />
+          </a>
+          <div class="flex">
+            <a href="#" class="notification-btn">
+              <img
+                src="./public/icons/notification.svg"
+                alt="notification-icon"
+              />
+            </a>
+            <a href="#" class="basket-btn">
+              <div class="basket-btn-icon">
+                <img
+                  src="./public/icons/bi_basket-fill.svg"
+                  alt="basket-icon"
+                />
+              </div>
+              <span>Корзина</span>
+            </a>
+            <div class="popover-wrapper">
+              <div class="popover"></div>
+              <a href="#" class="bookmark-btn">
+                <div class="bookmark-btn-icon">
+                  <img src="./public/icons/heart.svg" alt="bookmark-icon" />
+                  <span class="bookmarks-badge">0</span>
+                </div>
+                <span class="bookmark-text">Избранное</span>
+              </a>
+            </div>
+            <a class="close-menu-btn">
+              <img src="./public/icons/close-menu.svg" alt="close" />
+            </a>
+          </div>
+        </div>
+        <nav class="menu-navbar">
+          <ul>
+            <li>
+              <a class="flex"
+                >Кухни
+                <svg
+                  class="arrow-down"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="7"
+                  viewBox="0 0 5 5"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_1_4690)">
+                    <path
+                      id="path1"
+                      d="M4.37455 1.04171L0.624555 1.04171C0.586588 1.04183 0.549372 1.0523 0.516914 1.07199C0.484455 1.09169 0.457984 1.11987 0.440347 1.15349C0.422711 1.18711 0.414579 1.22491 0.416825 1.26281C0.419071 1.30071 0.431612 1.33728 0.453097 1.36858L2.3281 4.07691C2.4058 4.18921 2.59289 4.18921 2.6708 4.07691L4.5458 1.36858C4.56751 1.33734 4.58024 1.30075 4.5826 1.26279C4.58497 1.22483 4.57689 1.18694 4.55924 1.15325C4.54159 1.11955 4.51504 1.09134 4.48248 1.07168C4.44992 1.05201 4.41259 1.04165 4.37455 1.04171Z"
+                      fill="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_4690">
+                      <rect
+                        width="5"
+                        height="5"
+                        fill="white"
+                        transform="translate(5 5) rotate(180)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <div class="submenu">
+                <div>
+                  <a href="#">Модульные кухни</a>
+                  <a href="#">Готовые решения</a>
+                </div>
+                <div>
+                  <h1>Сантехника для кухни</h1>
+                  <a href="#"
+                    >Мойки
+                    <span class="bg-green">Новинки</span>
+                  </a>
+                  <a href="#">Смесители</a>
+                </div>
+                <div>
+                  <h1>Бытовая техника для кухни</h1>
+                  <a href="#">Духовые шкафы</a>
+                  <a href="#">Варочные панели</a>
+                  <a href="#"
+                    >Вытяжки
+                    <span class="bg-red">Скидки</span>
+                  </a>
+                  <a href="#">Микроволновые печи</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a class="flex"
+                >Шкафы
+                <svg
+                  class="arrow-down"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="5"
+                  height="5"
+                  viewBox="0 0 5 5"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_1_4690)">
+                    <path
+                      id="path1"
+                      d="M4.37455 1.04171L0.624555 1.04171C0.586588 1.04183 0.549372 1.0523 0.516914 1.07199C0.484455 1.09169 0.457984 1.11987 0.440347 1.15349C0.422711 1.18711 0.414579 1.22491 0.416825 1.26281C0.419071 1.30071 0.431612 1.33728 0.453097 1.36858L2.3281 4.07691C2.4058 4.18921 2.59289 4.18921 2.6708 4.07691L4.5458 1.36858C4.56751 1.33734 4.58024 1.30075 4.5826 1.26279C4.58497 1.22483 4.57689 1.18694 4.55924 1.15325C4.54159 1.11955 4.51504 1.09134 4.48248 1.07168C4.44992 1.05201 4.41259 1.04165 4.37455 1.04171Z"
+                      fill="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_4690">
+                      <rect
+                        width="5"
+                        height="5"
+                        fill="white"
+                        transform="translate(5 5) rotate(180)"
+                      />
+                    </clipPath>
+                  </defs></svg
+              ></a>
+              <div class="submenu">
+                <div>
+                  <a href="#">Модульные шкафы</a>
+                  <a href="#"
+                    >Готовые решения <span class="bg-green">Новинки</span></a
+                  >
+                </div>
+                <div>
+                  <h1>Сантехника для шкафы</h1>
+                  <a href="#">Мойки </a>
+                  <a href="#">Смесители</a>
+                </div>
+                <div>
+                  <h1>Бытовая техника для шкафы</h1>
+                  <a href="#"
+                    >Духовые шкафы <span class="bg-red">Скидки</span></a
+                  >
+                  <a href="#">Варочные панели</a>
+                  <a href="#">Вытяжки </a>
+                  <a href="#">Микроволновые печи</a>
+                </div>
+              </div>
+            </li>
+            <li><a href="#">Прихожие</a></li>
+            <li><a href="#">Гостиная</a></li>
+            <li><a href="#">Мебель малых форм</a></li>
+            <li><a href="#">Комоды и тумбы</a></li>
+            <li><a href="#">Столы</a></li>
+            <li><a href="#">Матрасы</a></li>
+            <li><a href="#">Бытовая Техника</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="buy-btn">
+          <span>Скидки</span>
+          Успей купить
+        </a>
+        <div class="search-input">
+          <form action="">
+            <input type="text" name="search" placeholder="Поиск товаров..." />
+          </form>
+          <img src="./public/icons/search.svg" alt="search-icon" />
+        </div>
+        <div class="menu-bottom">
+          <ul>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Оплата</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Наш салон</a></li>
+          </ul>
+          <a class="tel-n" href="#">8 (499) 408-62-27</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- SLIDER SECTION -->
+    <section class="container">
+      <div class="swiper slider">
+        <div class="swiper-wrapper"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS SECTION -->
+    <section class="container">
+      <div class="products"></div>
+    </section>
+
+    <!-- INTERIOR SOLUTIONS SECTION -->
+    <section class="container">
+      <div class="interior-header">
+        <h1>Интерьерные решения</h1>
+        <h3>Поможем вам определится в выборе мебели</h3>
+      </div>
+      <div class="interior">
+        <div class="content">
+          <div class="images">
+            <img
+              draggable="false"
+              src="./public/images/interior-bg.png"
+              alt="bg"
+            />
+            <img
+              draggable="false"
+              src="./public/images/interior-bg2.png"
+              alt="bg"
+            />
+          </div>
+          <div class="blur"></div>
+          <div class="advice">
+            <h1>Советы производителя</h1>
+            <ul>
+              <li>1. Не начинайте ремонт без проекта</li>
+              <li>
+                2. Ремонт помещения делается под мебель, а не мебель под ремонт
+              </li>
+              <li>
+                3. Замер и проект мебели производится до ремонта помещения
+              </li>
+            </ul>
+          </div>
+          <div class="advice-links flex">
+            <div class="left flex">
+              <h4>
+                Как правильно выбрать кухонный гарнитур
+                <a href="#"
+                  ><img src="./public/icons/arrow-red.svg" alt="arrow-icon"
+                /></a>
+              </h4>
+            </div>
+            <div class="right flex">
+              <div class="flex">
+                <h4>
+                  Выбор и растоновки мебели
+                  <a href="#"
+                    ><img src="./public/icons/arrow-red.svg" alt="arrow-icon"
+                  /></a>
+                </h4>
+              </div>
+              <div class="flex">
+                <h4>
+                  Статьи по мебели
+                  <a href="#"
+                    ><img src="./public/icons/arrow-red.svg" alt="arrow-icon"
+                  /></a>
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="advice-links-bottom flex">
+        <div class="left flex">
+          <h4>
+            Как правильно выбрать кухонный гарнитур
+            <a href="#"
+              ><img src="./public/icons/arrow-red.svg" alt="arrow-icon"
+            /></a>
+          </h4>
+        </div>
+        <div class="right flex">
+          <div class="flex">
+            <h4>
+              Выбор и растоновки мебели
+              <a href="#"
+                ><img src="./public/icons/arrow-red.svg" alt="arrow-icon"
+              /></a>
+            </h4>
+          </div>
+          <div class="flex">
+            <h4>
+              Статьи по мебели
+              <a href="#"
+                ><img src="./public/icons/arrow-red.svg" alt="arrow-icon"
+              /></a>
+            </h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="container">
+      <div class="contact flex">
+        <h1>ОСТАЛИСЬ ВОПРОСЫ?</h1>
+        <p>
+          Позвоните нашим менеджерам, они помогут советами по выбору именно<br />
+          той мебели, которая подойдёт вашему помещению больше всего.
+        </p>
+        <a href="#">
+          <button class="custom-button">Заказать звонок</button>
+        </a>
+        <div>
+          <img src="./public/images/contact-woman.png" alt="woman-img" />
+        </div>
+      </div>
+    </section>
+
+    <!-- LEADERS OF SELLS SECTION -->
+    <section class="container">
+      <div class="leaders">
+        <div class="header">
+          <h1>Лидеры продаж</h1>
+        </div>
+        <div class="swiper leaders-slider">
+          <div class="swiper-wrapper leader-products"></div>
+        </div>
+        <div class="leaders-button-next">
+          <img src="./public/icons/arrow-btn.svg" alt="btn" />
+        </div>
+        <div class="leaders-button-prev">
+          <img src="./public/icons/arrow-btn.svg" alt="btn" />
+        </div>
+        <div class="leaders-pagination"></div>
+      </div>
+    </section>
+
+    <!-- ADVANTAGES SECTION -->
+    <section class="container">
+      <div class="advantages">
+        <div class="header">
+          <h1>Приимушества работы с нами</h1>
+        </div>
+        <div class="contents flex" style="gap: 10px">
+          <div class="card">
+            <div class="flag">
+              <img src="./public/icons/red-flag.svg" alt="flag" />
+              <img src="./public/images/case.png" alt="case" />
+            </div>
+            <h1>Масштабность</h1>
+            <p>Широкий асортимент наряду</p>
+            <span>(более 3000 наименования продукции разного назначения)</span>
+          </div>
+          <div class="card">
+            <div class="flag">
+              <img src="./public/icons/red-flag.svg" alt="flag" />
+              <img src="./public/icons/medal-star.svg" alt="medal" />
+            </div>
+            <h1>Доверие</h1>
+            <p>Более 20 лет успешной работы на рынке России</p>
+          </div>
+          <div class="card">
+            <div class="flag">
+              <img src="./public/icons/red-flag.svg" alt="flag" />
+              <img src="./public/icons/cart-check.svg" alt="cart" />
+            </div>
+            <h1>Свой автопарк</h1>
+            <p>
+              У нас низкие цены из-за того,что являемся крупными производителями
+            </p>
+          </div>
+          <div class="card">
+            <div class="flag">
+              <img src="./public/icons/red-flag.svg" alt="flag" />
+              <img src="./public/icons/bus-white.svg" alt="bus" />
+            </div>
+            <h1>Свой автопарк</h1>
+            <p>Доставку осуществляем собственным транспортом</p>
+            <span style="font-weight: 400">Доставляем по всей России</span>
+          </div>
+          <div class="card">
+            <div class="flag">
+              <img src="./public/icons/red-flag.svg" alt="flag" />
+              <img src="./public/icons/wallet.svg" alt="wallet" />
+            </div>
+            <h1>Низкие цены</h1>
+            <p>Сертифицированная продукция</p>
+            <span style="font-weight: 400">2-года Гарантии</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUBSCRIBE SECTION -->
+    <section class="container">
+      <div class="subscribe flex">
+        <h1>Хотитте первыми узнать о лучших <span>скидках и акциях</span></h1>
+        <form action="" class="flex">
+          <input
+            type="text"
+            name="subscribe"
+            placeholder="Введите ваш email..."
+          />
+          <button type="submit">Подписаться</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- REVIEWS SECTION -->
+    <section class="container">
+      <div class="review">
+        <div class="header"><h1>Отзывы покупателей</h1></div>
+        <div class="content">
+          <div class="swiper review-slider">
+            <div class="swiper-wrapper"></div>
+          </div>
+          <div class="options flex">
+            <div class="review-button-prev">
+              <img src="./public/icons/arrow-btn.svg" alt="btn" />
+            </div>
+            <div class="review-pagination"></div>
+            <div class="review-button-next">
+              <img src="./public/icons/arrow-btn.svg" alt="btn" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+      <div class="container">
+        <nav class="header">
+          <ul>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Договор публичной оферты</a></li>
+            <li><a href="#">Как сделать заказ</a></li>
+            <li><a href="#">Статьи</a></li>
+            <li><a href="#">Уход за мебелью</a></li>
+            <li><a href="#">Отзывы</a></li>
+          </ul>
+        </nav>
+        <nav class="menu">
+          <ul>
+            <li><a href="#">Мебель в расрочку</a></li>
+            <li><a href="#">Оплата</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Сотрудничество</a></li>
+          </ul>
+          <div class="tel">
+            <img src="./public/icons/call.svg" alt="call-icon" />
+            <a href="#">8 (499) 408-62-27</a>
+            <span>/</span>
+            <a href="#">8 (926) 747-26-43</a>
+          </div>
+          <a href="#">
+            <img src="./public/icons/vk.svg" alt="vk-icon" />
+          </a>
+        </nav>
+        <div class="info">
+          <div class="flex" style="gap: 16px">
+            <p class="flex" style="gap: 8px">
+              <img src="./public/icons/clock.svg" alt="clock" />
+              ПН-ПТ с 10.00 до 20.00
+            </p>
+            <p class="flex" style="gap: 8px">
+              <img src="./public/icons/clock.svg" alt="clock" />СБ-ВС с 10.00 до
+              19.00
+            </p>
+          </div>
+          <p>
+            м. Солнцево, Говорово. Москва ул. Главмосстроя д.7 под. 3 (ориентир
+            суши вок)
+          </p>
+        </div>
+        <div class="payment">
+          <div class="top flex">
+            <p>
+              Оплатить покупку можно при получении,либо выбрать другой способ
+              оплаты
+            </p>
+            <a href="#" class="flex">
+              <img src="./public/icons/typcn_location.svg" alt="geo" />
+              Как проехать?</a
+            >
+          </div>
+          <div class="bottom flex">
+            <a href="#" class="flex">
+              <img
+                src="./public/images/bank-cards/bankcard-1.png"
+                alt="bankcard"
+              />
+            </a>
+            <a href="#" class="flex">
+              <img
+                src="./public/images/bank-cards/bankcard-2.png"
+                alt="bankcard"
+              />
+            </a>
+            <a href="#" class="flex">
+              <img
+                src="./public/images/bank-cards/bankcard-3.png"
+                alt="bankcard"
+              />
+            </a>
+            <a href="#" class="flex">
+              <img
+                src="./public/images/bank-cards/bankcard-4.png"
+                alt="bankcard"
+              />
+            </a>
+            <a href="#" class="flex">
+              <img
+                src="./public/images/bank-cards/bankcard-5.png"
+                alt="bankcard"
+              />
+            </a>
+            <a href="#" class="flex">
+              <img
+                src="./public/images/bank-cards/bankcard-6.png"
+                alt="bankcard"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Toastify JS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <!-- Main Script -->
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
+</html>
